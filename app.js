@@ -34,9 +34,9 @@ app.ws("/chat/:roomName", function(ws, req, next) {
 })
 
 
-// app.get("/:roomName", function (req, res, next) {
-//     res.sendFile(`${__dirname}/chat.html`);
-// })
+app.get("/:roomName", function (req, res, next) {
+    res.sendFile(`${__dirname}/chat.html`);
+})
 
 
 
